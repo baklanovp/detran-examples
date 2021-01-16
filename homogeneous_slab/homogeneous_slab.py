@@ -5,6 +5,10 @@
 # various fixed source solvers (e.g. SI and GMRES) along with
 # preconditioning.
 
+import sys, os
+sys.path.insert(0, '../')
+import config
+
 from detran import *
 import time
 
@@ -23,7 +27,7 @@ def run() :
   # Note, we print out the outer, which gives the sweep count.  For 
   # 1 group, though, there is no real outer iteration.
   inp.put_int("outer_print_out",            1)
-  inp.put_str("quad_type",                  "gausslegendre")
+  inp.put_str("quad_type",                  "gl") #     "gausslegendre")
   inp.put_int("quad_number_polar_octant",   1)
   inp.put_str("bc_west",                    "reflect")
   #
@@ -66,7 +70,7 @@ def run() :
     start = time.time()
     solver.solve()
     elapsed = (time.time() - start)
-    print elapsed, " seconds"
+    print( "{} {} {}".format(i, elapsed, " seconds"))
 
 if __name__ == "__main__":
   Manager.initialize(sys.argv)
