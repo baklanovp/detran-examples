@@ -2,6 +2,10 @@
 #
 # C5G7 materials
 
+import sys
+sys.path.insert(0, '../')
+import config
+
 from detran import Material
 
 def get_materials() :

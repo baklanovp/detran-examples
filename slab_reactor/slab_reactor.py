@@ -24,6 +24,10 @@
 #      C       0.681362819
 #      D       0.191909997
 
+import sys
+sys.path.insert(0, '../')
+import config
+
 from detran import *
 import slab_reactor_materials
 import slab_reactor_geometry
@@ -58,7 +62,7 @@ def run() :
   inp.put_dbl("eigen_tolerance",            1e-7)
   inp.put_str("bc_west",                    "vacuum")
   inp.put_str("bc_east",                    "vacuum")
-  inp.put_str("quad_type",                  "gausslegendre")
+  inp.put_str("quad_type",                  "gl")  # gausslegendre
   inp.put_int("quad_number_polar_octant",   16)
 
   #------------------------------------------------------------------------------#

@@ -8,6 +8,10 @@
 import numpy as np
 import time
 import sys
+import  os
+sys.path.insert(0, '../')
+import config
+
 from detran import *
 from core_c5g7 import get_core
 from assemblies_c5g7 import get_assemblies

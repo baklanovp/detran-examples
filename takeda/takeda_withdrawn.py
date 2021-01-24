@@ -3,6 +3,10 @@
 # Takeda benchmark, inserted control.
 # Reference keff ~ 0.9780
 
+import sys, os
+sys.path.insert(0, '../')
+import config
+
 from detran import *
 import time
 

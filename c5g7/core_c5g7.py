@@ -2,6 +2,10 @@
 #
 # 2-D core definition for the C5G7 benchmark
 
+import sys
+sys.path.insert(0, '../')
+import config
+
 from assemblies_c5g7 import get_assemblies
 from detran import *
 

@@ -2,6 +2,10 @@
 #
 # 2-D pin cell definitions for the C5G7 benchmark
 
+import sys
+sys.path.insert(0, '../')
+import config
+
 from detran import *
 
 def get_pins(number, flag) :

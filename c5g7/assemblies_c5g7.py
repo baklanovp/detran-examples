@@ -2,6 +2,10 @@
 #
 # 2-D assemblies definitions for the C5G7 benchmark
 
+import sys
+sys.path.insert(0, '../')
+import config
+
 from pins_c5g7 import *
 from detran import *
 

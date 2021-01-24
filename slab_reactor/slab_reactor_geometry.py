@@ -5,6 +5,10 @@
 # Transport Method". All data and reference values are from 
 # Appendix A of that work.
 
+import sys, os
+sys.path.insert(0, '../')
+import config
+
 from detran import *
 
 def get_mesh(geometry_id) :
