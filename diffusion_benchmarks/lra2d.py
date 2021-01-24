@@ -4,6 +4,11 @@
 #
 # Reference keff ~ 0.99636
 
+
+import sys, os
+sys.path.insert(0, '../')
+import config
+
 from detran import *
 import time
 

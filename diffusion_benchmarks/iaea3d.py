@@ -10,6 +10,12 @@
 #   Benchmark Problem Book, ANL-7416, Suppl. 2, Argonne National 
 #   Laboratory (1977)
 
+
+import sys, os
+sys.path.insert(0, '../')
+import config
+
+
 from detran import *
 import time
 
